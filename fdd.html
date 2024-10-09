@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('foodd.jpg'); background-size: cover;">
+
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Foodkart</h1>
+        
+        <div class="menu mb-5">
+            <h2>Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="burger.jpg" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger - $5</h5>
+                            <button class="btn btn-primary" onclick="addToOrder('Burger', 5)">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="pizza.jpg" class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza - $8</h5>
+                            <button class="btn btn-primary" onclick="addToOrder('Pizza', 8)">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="mandhi.jpg" class="card-img-top" alt="Mandhi">
+                        <div class="card-body">
+                            <h5 class="card-title">Mandhi - $7</h5>
+                            <button class="btn btn-primary" onclick="addToOrder('Mandhi', 7)">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <ul id="orderList" class="list-group mb-3"></ul>
+            <p>Total: $<span id="totalAmount">0</span></p>
+            <button class="btn btn-success" onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
